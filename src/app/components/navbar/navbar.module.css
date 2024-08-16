@@ -1,0 +1,16 @@
+.cont{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: brown;
+    width: 90%;
+
+}
+
+.ul{
+    height:50%;
+    display: flex;
+    gap:20px;
+    list-style: none;
+}
