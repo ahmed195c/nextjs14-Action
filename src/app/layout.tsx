@@ -17,9 +17,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} ${"cont"}`} >
+        <header>
         <Navbar/>
+        </header>
+        <main>
         {children}
+        </main>
+        <footer>
+          bombaclat
+        </footer>
 
       </body>
     </html>

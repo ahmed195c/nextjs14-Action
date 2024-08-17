@@ -1,7 +1,7 @@
 "use client"
 
 import {useState} from "react"
-// import styles from "./links.module.css"
+import styles from "./links.module.css"
 import Navlink from "@/app/components/navbar/links/navlinks/Navlink"
 
 
@@ -11,7 +11,7 @@ const Links = () =>{
             path:"/",
         },
         {title:"About",
-            path:"/About"
+            path:"/about"
         },
         {title:"Contact",
             path:"/contact"
@@ -22,10 +22,12 @@ const Links = () =>{
 
     return(
         <>
-            {links.map((link => (
-                <h1>working</h1>,
-                <Navlink item={link} key={link.title}> {link.title} </Navlink>
-            )))}
+            <div className={styles.cont}>
+                {links.map((link => (
+                    <h1>working</h1>,
+                    <Navlink item={link} key={link.title}> {link.title} </Navlink>
+                )))}
+            </div>
         </>
     )
 }
