@@ -25,7 +25,7 @@ export default function RootLayout({
         {children}
         </main>
         <footer>
-          bombaclat
+          fotter
         </footer>
 
       </body>
